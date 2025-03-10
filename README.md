@@ -13,8 +13,7 @@ Este é um projeto CRUD simples de cadastro de usuários, onde é possível regi
 
 ### 1️⃣ Clonar o repositório
 ```sh
-  git clone https://github.com/seu-usuario/seu-repositorio.git
-  cd seu-repositorio
+  git clone https://github.com/loez97/user-crud-react.git
 ```
 ### 2️⃣ Iniciar o Servidor
 ```sh
@@ -25,7 +24,7 @@ O backend rodará por padrão em `http://localhost:5000`.
 
 ### 3️⃣ Iniciar o Frontend
 ```sh
-cd "cadastro de usuários"
+cd cadastro
 npm run dev
 ```
 O frontend rodará por padrão em `http://localhost:5173`.
