@@ -1,0 +1,148 @@
+/* Variáveis de cores */
+:root {
+  --cor-principal: #00ff00;
+  /* Verde neon, estilo retro */
+  --cor-secundaria: #121212;
+  /* Fundo escuro para melhor contraste */
+  --cor-terciaria: #ffffff;
+  /* Texto claro */
+  --cor-accent: #ff5733;
+  /* Vermelho neon */
+  --cor-borda: #1a1a1a;
+  /* Cor de bordas */
+  --cor-card: #2c2c3a;
+  /* Cor de fundo dos cards */
+  --cor-input: #3a3755;
+  /* Cor de borda dos inputs */
+}
+
+/* Reset de estilos */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Press Start 2P', cursive, sans-serif;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-terciaria);
+  line-height: 1.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Título */
+h1 {
+  color: var(--cor-terciaria);
+  font-size: 1.8rem;
+  text-align: center;
+  text-shadow: 0 0 10px var(--cor-accent);
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: var(--cor-card);
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Inputs */
+form input {
+  border: 2px solid var(--cor-input);
+  border-radius: 8px;
+  height: 3rem;
+  background-color: transparent;
+  color: var(--cor-terciaria);
+  font-size: 1rem;
+  padding: 0 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+form input:focus {
+  border-color: var(--cor-accent);
+  box-shadow: 0 0 8px var(--cor-accent);
+  outline: none;
+}
+
+/* Botão do formulário */
+form button {
+  border-radius: 8px;
+  background-color: var(--cor-principal);
+  height: 3rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px var(--cor-principal);
+}
+
+/* Cards */
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor-card);
+  padding: 1rem;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Texto dentro dos cards */
+.card p {
+  color: var(--cor-terciaria);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.card p span {
+  font-weight: normal;
+  color: var(--cor-accent);
+}
+
+/* Botão dentro do card */
+.card button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card button:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
